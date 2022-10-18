@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content=”../../assets/images/cover.jpg” />
+    <meta name="description" content="Non-governmental organization in Tagum City, Davao del Norte, Philippines">
+    <meta name="keywords" content="NGO, Tagum City">
+    <meta name="author" content="Jamedith Abuan, Raymond Joy Purot, Ryan Jay Montaña">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tindog Tagum | How to get involved?</title>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../../assets/images/logo.png" />
+    <link rel="stylesheet" href="../../css/w3.css">
+    <link rel = "stylesheet" href = "../../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div class="nav-links flex" id= "navLinks">
+            <a href="../index.html"><img src="../../assets/images/logo.png" href = "index.html" id="logo">
+            <p id="textLogo">Tindog Tagum</p></a>
+            
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class = "fa fa-bars"></i></label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../../pages/news/mainnews.html">News and Events</a></li>
+                <li class="active"><a href="../registration/main_register.html">Get involved</a></li>
+                <li><a href="../aboutus.html">About us</a></li>
+                <li><a href="../contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <!-- BODY -->
+
+    <div class="box-green">
+        <div class="volunteer flex">
+            <div class="col2">
+                <p class="subtitle"> HOW TO GET INVOLVED</p>
+                <h2> Become a volunteer or help with our fund for future projects. </h2>
+                <p>It all starts with your decision to act rather than turn away. You fulfill 
+                    a need, and that causes a domino effect. Families are able to escape poverty, 
+                    start working toward a brighter future, and develop a receptive outlook toward 
+                    new life. You have the ability to change a life, a family, or a whole community 
+                    with one action.</p>
+            </div>
+            <div class="col2">
+                <img src="../../assets/images/icons/volunteer.png">
+            </div>
+        </div>
+    </div>
+
+    <section class="box-background">
+        <div class="col2">
+            <!-- Anchor For Donation-->
+            <div id= "donate"></div>
+            <section class="getstarted box-white">
+                <img src="../../assets/images/icons/donate.png" alt="Donate">
+                <h4>Donate or sponsor an event</h4>
+                <p>We take pride in urging all Filipinos to take part in the volunteerism
+                    of the Tindog Tagum by becoming a donor for present and future projects. 
+                    We guarantee our sponsor to be given acknowledgement and be updated 
+                    concerning the projects we are planning from time to time.
+                </p>
+
+                <button class="border-button" id="donate-btn">Let us know</button>
+
+                <div class="w3-modal" id="donateModal"  >
+                    <div class="donateInfo w3-modal-content w3-animate-top">
+                        <span class="close">&times;</span>
+                        <h2>Let us know</h2>
+                        <p>Let us know how you want to donate. We will send you an email for
+                            further donation <br>
+                            process information. Thank you!</p>
+
+                        <form onsubmit="sendEmail(); reset(); return false; " >
+
+                            <div class="flex">
+                                <!-- FIRST NAME -->
+                                <input 
+                                type="text" 
+                                id="fname" 
+                                name="firstname" 
+                                placeholder="Enter your first name...">
+
+                                <!-- LAST NAME -->
+                                <input 
+                                type="text" 
+                                id="lname" 
+                                name="lastname" 
+                                placeholder="Enter your last name...">
+                            </div>
+
+                            <!-- EMAIL -->
+                            <input 
+                            type="email" 
+                            id="emailadd" 
+                            name="Email" 
+                            placeholder="Enter your email address">
+
+                            
+                            <div class="donation"><label for="donation">Please select a dedicated donation:</label>
+                                <select name="donation-type" id="donationType">
+                                    <option value="Calamity Response Operation">Calamity Response Operation</option>
+                                    <option value="Educational Discussion Event">Educational Discussion Event</option>
+                                    <option value="Social Services">Social Services</option>
+                                </select></div>
+                            
+
+                            <input type="submit" id = "sub" value="Submit" class="green-button submit"  >
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col2">
+            <!-- Anchor For Membeship-->
+            <div id= "membership"></div>
+            <section class="getstarted box-white">
+                <img src="../../assets/images/icons/member.png" alt="Membership">
+                <h4>Volunteer and be a member</h4>
+                <p>Started as a youth volunteer movement and now we're here. Join us as we empower 
+                    the youth towards nation building and community engagement.  
+                    </p>
+                <button class="border-button">
+                    <a href="../registration/volunteerInfo.html">
+                        Get Started &nbsp;
+                        <i class="fa fa-long-arrow-right"></i></a>
+                </button>
+            </section>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <section class="footer">
+
+        <div class="row">
+            <div class="col4">
+                <p style="font-size: 10px">Tagum City, Davao</p>
+                <img src="../../assets/images/logo.png" style="width: 80px ; margin-top: 8px;">
+            </div>
+
+            <div class="col4">
+                <h3>About Us</h3>
+                <a href="../aboutus.html#whatarewe"><p> What are we </p></a>
+                <a href="../news/mainnews.html#event-09-25-22"><p> What we do</p></a>
+            </div>
+
+            <div class="col4">
+                <h3>Help</h3>
+                <a href="#"><p> How can you help </p></a>
+                <a href="volunteerInfo.html"><p> Be a member</p></a>
+                <a href="#donate"><p> Donate now</p></a>
+            </div>
+
+            <div class="col4">
+                <h3>Socials</h3>
+                <a href="https://www.facebook.com/yfltagum" target="_blank" class="fa fa-facebook socialicon"></a>  
+                <a href="https://twitter.com/tindogtgm/" target="_blank" class="fa fa-twitter socialicon"></a>
+                <a href="https://www.instagram.com/tindogtgm/" target="_blank"  class="fa fa-instagram socialicon"></a>
+
+            </div>
+        </div>
+    </section>
+    <script src = "https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            if (checkBlank() == true){
+                Email.send({
+                    SecureToken : "7b8197c5-9d74-445c-b3dd-ebc68214cf31",
+                    To : 'r.purot.487429@umindanao.edu.ph',
+                    From : "nevermindpurot@gmail.com",
+                    Subject : "Tindog Tagum Donation ",
+                    Body : "Name: "+ document.getElementById("fname").value +" "+ document.getElementById("lname").value
+                    +"<br> Email: "+ document.getElementById("emailadd").value 
+					+"<br> Dedicated Donation: "+ document.getElementById("donationType").value
+                   
+
+                }).then(
+                message => alert(message)
+                
+                );
+                
+            }
+            else{
+                alert("please fill out your credentials")
+            }
+
+        }
+        function closemodal(){
+            $('#donateModal').modal('hide');
+        }
+        function checkBlank(){
+            if(document.getElementById("emailadd").value == "" || document.getElementById("fname").value == "" || document.getElementById("lname").value == ""){
+                
+                return false;
+            }
+            else{
+                
+                return true;
+            }
+        }
+    </script>
+
+</body>
+<script src="../../script/script.js">
+</script>
+</html>
